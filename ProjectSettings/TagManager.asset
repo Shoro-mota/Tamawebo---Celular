@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Cielo
+    uniqueID: 3598442765
+    locked: 0
+  - name: Casa
+    uniqueID: 2013070813
+    locked: 0
+  - name: Muebles
+    uniqueID: 2892948753
+    locked: 0
+  - name: PLayer
+    uniqueID: 561223925
+    locked: 0
