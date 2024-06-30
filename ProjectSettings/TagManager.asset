@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - box
-  - fondo
+  - juego
   - 
   - 
   - 
@@ -61,4 +61,7 @@ TagManager:
     locked: 0
   - name: Texto
     uniqueID: 2970717301
+    locked: 0
+  - name: juego
+    uniqueID: 841123359
     locked: 0

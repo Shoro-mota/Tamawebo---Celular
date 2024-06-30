@@ -325,7 +325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &208492348
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2016,7 +2016,7 @@ MonoBehaviour:
   colorX: {r: 1, g: 1, b: 1, a: 1}
   colorO: {r: 1, g: 1, b: 1, a: 1}
   winSprite: {fileID: 21300000, guid: c137944a5ac7a2a4284c19a97853031e, type: 3}
-  drawSprite: {fileID: 0}
+  drawSprite: {fileID: 21300000, guid: ce8689a281ebfeb468a6a2ffa58e9f5d, type: 3}
   marks: 
 --- !u!212 &1899891564
 SpriteRenderer:

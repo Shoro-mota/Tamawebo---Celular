@@ -94,8 +94,8 @@ public class Board : MonoBehaviour {
             OnWinAction.Invoke(winningMark, winningColor);
 
         Debug.Log((winningMark == Mark.None) ? "Nobody Wins." : winningMark.ToString() + " Wins.");
-
-        ShowEndGameSprite(endSprite, spritePosition);
+        Vector3 customPosition = new Vector3(0.02f, 1.96f, 0);
+        ShowEndGameSprite(endSprite, customPosition);
         canPlay = false;
     }
 
