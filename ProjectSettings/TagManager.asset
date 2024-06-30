@@ -56,9 +56,9 @@ TagManager:
   - name: PLayer
     uniqueID: 561223925
     locked: 0
-  - name: Texto
-    uniqueID: 2970717301
-    locked: 0
   - name: gato
     uniqueID: 1999619451
+    locked: 0
+  - name: Texto
+    uniqueID: 2970717301
     locked: 0
