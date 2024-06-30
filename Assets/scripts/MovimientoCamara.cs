@@ -8,6 +8,12 @@ public class SwipeCamera : MonoBehaviour
     private Vector2 startTouchPosition, endTouchPosition;
     private bool isSwiping = false;
 
+    // Límites de movimiento de la cámara
+    public float minX = -10f;
+    public float maxX = 10f;
+    public float minY = -10f;
+    public float maxY = 10f;
+
     void Update()
     {
         if (Input.touchCount > 0)
@@ -33,12 +39,12 @@ public class SwipeCamera : MonoBehaviour
                             if (swipeDirection.x > 0)
                             {
                                 // Swipe to the right
-                                transform.Translate(Vector3.right * swipeSpeed * Time.deltaTime);
+                                MoveCamera(Vector3.right);
                             }
                             else
                             {
                                 // Swipe to the left
-                                transform.Translate(Vector3.left * swipeSpeed * Time.deltaTime);
+                                MoveCamera(Vector3.left);
                             }
                         }
                         startTouchPosition = endTouchPosition;
@@ -51,5 +57,16 @@ public class SwipeCamera : MonoBehaviour
                     break;
             }
         }
+    }
+
+    void MoveCamera(Vector3 direction)
+    {
+        Vector3 newPosition = transform.position + direction * swipeSpeed * Time.deltaTime;
+
+        // Aplicar límites de movimiento
+        newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
+        newPosition.y = Mathf.Clamp(newPosition.y, minY, maxY);
+
+        transform.position = newPosition;
     }
 }
