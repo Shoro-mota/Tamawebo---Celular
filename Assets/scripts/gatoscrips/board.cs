@@ -1,7 +1,10 @@
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections;
 
 public class Board : MonoBehaviour {
+    [SerializeField] private Canvas canvas; // Referencia al canvas completo
+
     [Header("Input Settings")]
     [SerializeField] private LayerMask boxesLayerMask;
     [SerializeField] private float touchRadius;
@@ -95,8 +98,26 @@ public class Board : MonoBehaviour {
 
         Debug.Log((winningMark == Mark.None) ? "Nobody Wins." : winningMark.ToString() + " Wins.");
         Vector3 customPosition = new Vector3(0.02f, 1.96f, 0);
+        
         ShowEndGameSprite(endSprite, customPosition);
+        StartCoroutine(ActivateCanvasDelayed());
+
         canPlay = false;
+    }
+
+    private IEnumerator ActivateCanvasDelayed() {
+         Debug.Log("Esperando antes de activar el canvas...");
+        yield return new WaitForSeconds(5f);
+
+        Debug.Log("Activando elementos del canvas...");
+        ActivateVictoryElements();
+    }
+
+     private void ActivateVictoryElements() {
+        // Por ejemplo, activar todos los hijos del canvas
+        foreach (Transform child in canvas.transform) {
+            child.gameObject.SetActive(true);
+        }
     }
 
     private bool CheckIfWin() {
