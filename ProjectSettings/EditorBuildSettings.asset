@@ -11,6 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gato.unity
     guid: dce40465972be254e8f8ba5c96834306
+  - enabled: 1
+    path: Assets/Scenes/Casa.unity
+    guid: 4417069a72f56df45915c5174035fe08
+  - enabled: 1
+    path: "Assets/Scenes/Jard\xEDn.unity"
+    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/menu.unity
+    guid: 1e10c8475deb85740b7d59c9822201b0
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: e12e61d2d6356d74c9a87e9bfc92859e, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 9bce345c332ca1745a34b54300c8e57f, type: 2}
