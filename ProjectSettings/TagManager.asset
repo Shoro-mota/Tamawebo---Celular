@@ -8,11 +8,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - texto
   - Water
   - UI
-  - 
-  - 
+  - box
+  - juego
   - 
   - 
   - 
@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: fondo
+    uniqueID: 123732047
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -52,4 +55,13 @@ TagManager:
     locked: 0
   - name: PLayer
     uniqueID: 561223925
+    locked: 0
+  - name: gato
+    uniqueID: 1999619451
+    locked: 0
+  - name: Texto
+    uniqueID: 2970717301
+    locked: 0
+  - name: juego
+    uniqueID: 841123359
     locked: 0
