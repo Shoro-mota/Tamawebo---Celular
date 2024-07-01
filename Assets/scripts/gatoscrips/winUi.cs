@@ -12,7 +12,7 @@ public class WinUI : MonoBehaviour {
    [SerializeField] private Board board ;
 
    private void Start () {
-      uiRestartButton.onClick.AddListener (() => SceneManager.LoadScene (0)) ;
+      uiRestartButton.onClick.AddListener (() => SceneManager.LoadScene (2)) ;
       board.OnWinAction += OnWinEvent ;
 
       uiCanvas.SetActive (false) ;
